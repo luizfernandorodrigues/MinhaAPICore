@@ -38,6 +38,8 @@ namespace MinhaAPICore
                 app.UseHsts();
             }
 
+            app.UseMeuMiddleware();
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }
